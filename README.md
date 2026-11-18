@@ -19,13 +19,11 @@ dependencyResolutionManagement {
 
 ```kotlin
 dependencies {
-    implementation("com.darwin.videocache:videoCache:1.0.0")
-    // 也可以使用 JitPack 坐标：
-    // implementation("com.github.kcufow.videoCache:videoCache:1.0.0")
+    implementation("com.github.kcufow:videoCache:1.0.0")
 }
 ```
 
-版本号对应 GitHub Release / Tag，例如 `1.0.0`、`v1.0.0`。
+版本号对应 GitHub Tag（当前为 `1.0.0`）。构建状态见：https://jitpack.io/#kcufow/videoCache
 
 ## 本地发布
 
@@ -33,7 +31,8 @@ dependencies {
 ./gradlew :videoCache:publishToMavenLocal -x test
 ```
 
-产物坐标：`com.darwin.videocache:videoCache:1.0.0`
+本地坐标：`com.darwin.videocache:videoCache:1.0.0`  
+JitPack 坐标：`com.github.kcufow:videoCache:1.0.0`
 
 ## 模块说明
 
