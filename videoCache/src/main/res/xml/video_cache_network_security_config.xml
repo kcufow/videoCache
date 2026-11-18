@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  仅放行本机 Proxy（http://127.0.0.1 / localhost）明文流量。
+  宿主若已有 networkSecurityConfig，请把下列 domain-config 合并进自己的配置，
+  或直接引用 @xml/video_cache_network_security_config。
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false" />
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+    </domain-config>
+</network-security-config>

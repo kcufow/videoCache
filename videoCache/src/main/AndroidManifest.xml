@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+      通过 Manifest Merger 向宿主提供本机 cleartext 配置。
+      若宿主 application 已声明 networkSecurityConfig，以宿主为准，需自行合并 localhost 白名单。
+    -->
+    <application
+        android:networkSecurityConfig="@xml/video_cache_network_security_config" />
+
+</manifest>
